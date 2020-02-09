@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 
 import * as actions from "../store/actions";
+import Button from "./UI/Button";
 
 const Search = props => {
   const { onFetchImages } = props;
@@ -34,12 +35,8 @@ const Search = props => {
         onChange={event => changeHandler(event)}
         onKeyPress={event => handleEnter(event)}
       />
-      <button type="submit" onClick={() => onFetchImages(props.keyword)}>
-        Search
-      </button>
-      <button type="submit" onClick={() => props.onSaveQuery()}>
-        Save
-      </button>
+      <Button clicked={() => onFetchImages(props.keyword)}>Search</Button>
+      <Button clicked={() => props.onSaveQuery()}>Save</Button>
     </div>
   );
 };
