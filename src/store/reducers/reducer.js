@@ -12,10 +12,13 @@ const initialState = {
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.SET_KEYWORD:
-      return updateObject(state, { keyword: action.keyword.toUpperCase() });
+      return updateObject(state, {
+        keyword: action.keyword.toUpperCase(),
+        error: false
+      });
 
     case actionTypes.FETCH_IMAGES_START:
-      return updateObject(state, { loading: true });
+      return updateObject(state, { loading: true, error: false });
 
     case actionTypes.FETCH_IMAGES_SUCCESS:
       return updateObject(state, {

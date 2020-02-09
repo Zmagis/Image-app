@@ -7,12 +7,10 @@ const ErrorWindow = props => {
   return (
     <div className="errorWindow">
       <Backdrop />
-
-      <h4>OOOPS...</h4>
       {props.keyword !== "" ? (
         <p>There are no images with keyword: {props.keyword}</p>
       ) : (
-        <p>Type a keyword for search</p>
+        <p>Search field is emty</p>
       )}
     </div>
   );
