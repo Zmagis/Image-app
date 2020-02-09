@@ -1,5 +1,7 @@
 export {
   setKeyword,
   initFetchImages,
-  saveQuery // deselectImage
+  saveQuery,
+  leaveErrorMessage,
+  fetchSavedQuery
 } from "./actions";

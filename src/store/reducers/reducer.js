@@ -14,13 +14,6 @@ const reducer = (state = initialState, action) => {
     case actionTypes.SET_KEYWORD:
       return updateObject(state, { keyword: action.keyword.toUpperCase() });
 
-    case actionTypes.SAVE_QUERY:
-      if (state.keyword !== "") {
-        return updateObject(state, {
-          savedQueries: [...state.savedQueries, state.keyword],
-          keyword: ""
-        });
-      }
     case actionTypes.FETCH_IMAGES_START:
       return updateObject(state, { loading: true });
 
@@ -34,23 +27,34 @@ const reducer = (state = initialState, action) => {
     case actionTypes.FETCH_IMAGES_FAIL:
       return updateObject(state, { loading: false, error: true });
 
+    case actionTypes.SAVE_QUERY:
+      if (state.keyword !== "") {
+        return updateObject(state, {
+          savedQueries: [...state.savedQueries, state.keyword],
+          keyword: ""
+        });
+      } else {
+        return state;
+      }
+
+    case actionTypes.SHOW_SAVED_QUERY_RESULT:
+      return updateObject(state, {
+        images: action.photos,
+        loading: false,
+        error: false,
+        keyword: ""
+      });
+
+    case actionTypes.LEAVE_ERROR_MESSAGE:
+      return updateObject(state, {
+        error: false,
+        keyword: "",
+        images: []
+      });
+
     default:
       return state;
   }
 };
 
 export default reducer;
-
-// const allImages = [...state.images];
-//       console.log(allImages);
-//       let newArray;
-
-//       for (let i = 0; i <= allImages.length - 1; i++) {
-//         let obj = allImages[i];
-//         // console.log(state.selectedImages.filter(id => id !== action.imageId));
-//         if (action.imageId === obj.id) {
-//           newArray = [...state.selectedImages, obj];
-//           updateObject(state, { selectedImages: newArray });
-//         }
-//       }
-//       return updateObject(state, { selectedImages: newArray });

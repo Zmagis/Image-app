@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 
-import * as actions from "../../store/actions";
+import * as actions from "../store/actions";
 
 const Search = props => {
   const { onFetchImages } = props;
@@ -14,13 +14,19 @@ const Search = props => {
       onFetchImages(props.keyword);
     }
   };
+
   const changeHandler = event => {
     props.onSetKeyword(event.target.value);
   };
 
   return (
     <div className="search">
-      <h1>Photos by Unsplash</h1>
+      <h1>
+        Photos by{" "}
+        <a href="https://unsplash.com/" target="_blank">
+          Unsplash
+        </a>
+      </h1>
       <input
         type="text"
         placeholder="Search photos"
@@ -40,7 +46,6 @@ const Search = props => {
 
 const mapStateToProps = state => {
   return {
-    images: state.images,
     keyword: state.keyword
   };
 };

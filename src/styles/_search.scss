@@ -5,7 +5,7 @@
 }
 
 .search {
-  width: 85%;
+  width: 82%;
   margin: 60px auto 20px auto;
   box-sizing: border-box;
   h1 {
@@ -13,28 +13,30 @@
   }
   input {
     @include button-input-styles();
-    width: 70%;
+    width: 76%;
     box-sizing: border-box;
     background-color: transparent;
     border-bottom: 2px rgba(84, 84, 94, 0.678) solid;
     outline: none;
-    margin-right: 40px;
+    margin-right: 66px;
   }
   input:hover {
     border-bottom: 2px rgba(65, 191, 223, 0.856) solid;
   }
   button {
     @include button-input-styles();
-    width: 10%;
+    width: 8%;
     box-sizing: border-box;
     border-radius: 4px;
     background-color: rgba(65, 191, 223, 0.719);
     color: white;
     font-weight: bold;
     letter-spacing: 1px;
+    outline: none;
   }
   button:hover {
     cursor: pointer;
     background-color: rgba(65, 191, 223, 0.856);
+    // outline: none;
   }
 }
