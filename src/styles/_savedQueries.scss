@@ -23,3 +23,12 @@
     background-color: $bck-color;
   }
 }
+
+@media (max-width: 700px) {
+  .saved-queries {
+    width: 95%;
+    h2 {
+      font-size: 18px;
+    }
+  }
+}

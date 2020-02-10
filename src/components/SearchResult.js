@@ -5,7 +5,6 @@ import Spinner from "./UI/Spinner";
 import ErrorWindow from "./error/ErrorWindow";
 
 const ResultGrid = props => {
-  console.log(props.images[0]);
   let result = props.images.map(item => (
     <div key={item.id} className="box">
       <a href={item.user.links.html} target="_blank">

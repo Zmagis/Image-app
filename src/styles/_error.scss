@@ -25,3 +25,15 @@
     margin-top: 80px !important;
   }
 }
+
+@media (max-width: 360px) {
+  .errorWindow {
+    width: 200px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -115px;
+    p {
+      margin-top: 20px !important;
+    }
+  }
+}

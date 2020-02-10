@@ -26,8 +26,34 @@ $bck-color: rgba(28, 30, 31, 0.959);
     }
     p {
       margin-top: 5px;
-      font-size: 18px;
       color: white;
     }
+  }
+}
+
+@media (max-width: 1400px) {
+  .result-grid {
+    columns: 2;
+    width: calc(70% -40px);
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 1200px) {
+  .result-grid {
+    columns: 1;
+  }
+}
+
+@media (max-width: 700px) {
+  .photos {
+    display: flex;
+    flex-direction: column;
+  }
+  .result-grid {
+    width: 99%;
+    margin: 10px auto;
+    column-gap: 10px;
+    padding: 10px 28px 10px 10px;
   }
 }

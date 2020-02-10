@@ -1,5 +1,4 @@
 @mixin button-input-styles {
-  margin: 10px 20px 10px 0;
   padding: 15px 20px;
   border: none;
   box-sizing: border-box;
@@ -12,9 +11,8 @@ $aquaish-color: rgba(65, 191, 223, 0.856);
   width: 82%;
   margin: 60px auto 20px auto;
   box-sizing: border-box;
-  h1 {
-    margin-bottom: 30px;
-  }
+  display: flex;
+
   input {
     @include button-input-styles();
     width: 76%;
@@ -27,15 +25,52 @@ $aquaish-color: rgba(65, 191, 223, 0.856);
   }
   button {
     @include button-input-styles();
-    width: 8%;
+    width: 90px;
     border-radius: 4px;
     background-color: rgba(65, 191, 223, 0.719);
     color: white;
     font-weight: bold;
     letter-spacing: 1px;
+
     &:hover {
       cursor: pointer;
       background-color: $aquaish-color;
+    }
+  }
+}
+
+@media (max-width: 1305px) {
+  .search {
+    input {
+      margin-right: 50px;
+    }
+  }
+}
+
+@media (max-width: 1220px) {
+  .search {
+    input {
+      margin-right: 40px;
+    }
+  }
+}
+
+@media (max-width: 1170px) {
+  .search {
+    display: flex;
+    flex-direction: column;
+    button {
+      margin-top: 15px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .search {
+    display: flex;
+    flex-direction: column;
+    input {
+      width: 95%;
     }
   }
 }

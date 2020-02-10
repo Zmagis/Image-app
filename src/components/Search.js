@@ -22,12 +22,6 @@ const Search = props => {
 
   return (
     <div className="search">
-      <h1>
-        Photos by{" "}
-        <a href="https://unsplash.com/" target="_blank">
-          Unsplash
-        </a>
-      </h1>
       <input
         type="text"
         placeholder="Search photos"
@@ -35,8 +29,15 @@ const Search = props => {
         onChange={event => changeHandler(event)}
         onKeyPress={event => handleEnter(event)}
       />
-      <Button clicked={() => onFetchImages(props.keyword)}>Search</Button>
-      <Button clicked={() => props.onSaveQuery()}>Save</Button>
+      <div className="buttons">
+        <Button
+          add={{ marginRight: "10px" }}
+          clicked={() => onFetchImages(props.keyword)}
+        >
+          Search
+        </Button>
+        <Button clicked={() => props.onSaveQuery()}>Save</Button>
+      </div>
     </div>
   );
 };

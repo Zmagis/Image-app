@@ -7,6 +7,12 @@ import SavedQueries from "./components/SavedQueries";
 const App = () => {
   return (
     <div className="App">
+      <h1>
+        Photos by{" "}
+        <a href="https://unsplash.com/" target="_blank">
+          Unsplash
+        </a>
+      </h1>
       <Search />
       <div className="photos">
         <SearchResults />
