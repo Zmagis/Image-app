@@ -16,9 +16,8 @@ export const fetchImagesFail = () => {
 };
 export const initFetchImages = keyword => {
   return dispatch => {
-    const AcceessKey =
-      "9ac327f77c1de13d07491eb3e8c8084cb501a2d989b5e4b7f159822d3aceed74";
-    let url = `https://api.unsplash.com/search/photos?page=1&query=${keyword}&client_id=${AcceessKey}`;
+    const API_KEY = process.env.REACT_APP_API_KEY;
+    let url = `https://api.unsplash.com/search/photos?page=1&query=${keyword}&client_id=${API_KEY}`;
     dispatch(fetchImagesStart());
     axios
       .get(url)
@@ -47,9 +46,8 @@ export const showSavedQueryResult = photos => {
 };
 export const fetchSavedQuery = query => {
   return dispatch => {
-    const AcceessKey =
-      "9ac327f77c1de13d07491eb3e8c8084cb501a2d989b5e4b7f159822d3aceed74";
-    let url = `https://api.unsplash.com/search/photos?page=1&query=${query}&client_id=${AcceessKey}`;
+    const API_KEY = process.env.REACT_APP_API_KEY;
+    let url = `https://api.unsplash.com/search/photos?page=1&query=${query}&client_id=${API_KEY}`;
     dispatch(fetchImagesStart());
     axios
       .get(url)
