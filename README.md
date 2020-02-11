@@ -3,7 +3,7 @@
 A simple image front-end application using [unsplash.com](https://unsplash.com/developers) API.This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 Additional dependencies were installed:
 
-`redux react-redux redux-thunk axios masonry-layout enzyme enzyme-adapter-react-16`
+### `redux react-redux redux-thunk axios masonry-layout enzyme enzyme-adapter-react-16`
 
 ## Functionality
 
