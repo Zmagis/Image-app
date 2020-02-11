@@ -9,7 +9,7 @@ configure({ adapter: new Adapter() });
 describe("reducers", () => {
   it("should return the initial state", () => {
     expect(reducer(undefined, {})).toEqual({
-      keyword: "CLIMB",
+      keyword: "FLY",
       images: [],
       savedQueries: [],
       loading: false,
@@ -21,7 +21,7 @@ describe("reducers", () => {
     expect(
       reducer(
         {
-          keyword: "CLIMB",
+          keyword: "FLY",
           images: [],
           savedQueries: [],
           loading: false,
@@ -42,7 +42,7 @@ describe("reducers", () => {
     expect(
       reducer(
         {
-          keyword: "CLIMB",
+          keyword: "FLY",
           images: [],
           savedQueries: [],
           loading: false,
@@ -51,7 +51,7 @@ describe("reducers", () => {
         { type: actionTypes.FETCH_IMAGES_START }
       )
     ).toEqual({
-      keyword: "CLIMB",
+      keyword: "FLY",
       images: [],
       savedQueries: [],
       loading: true,
@@ -63,7 +63,7 @@ describe("reducers", () => {
     expect(
       reducer(
         {
-          keyword: "CLIMB",
+          keyword: "FLY",
           images: [],
           savedQueries: [],
           loading: false,
@@ -72,7 +72,7 @@ describe("reducers", () => {
         { type: actionTypes.FETCH_IMAGES_FAIL }
       )
     ).toEqual({
-      keyword: "CLIMB",
+      keyword: "FLY",
       images: [],
       savedQueries: [],
       loading: false,
@@ -84,7 +84,7 @@ describe("reducers", () => {
     expect(
       reducer(
         {
-          keyword: "CLIMB",
+          keyword: "FLY",
           images: [],
           savedQueries: [],
           loading: false,
@@ -95,7 +95,7 @@ describe("reducers", () => {
     ).toEqual({
       keyword: "",
       images: [],
-      savedQueries: ["CLIMB"],
+      savedQueries: ["FLY"],
       loading: false,
       error: false
     });

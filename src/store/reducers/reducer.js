@@ -2,7 +2,7 @@ import * as actionTypes from "../actions/actionTypes";
 import { updateObject } from "../util";
 
 const initialState = {
-  keyword: "CLIMB",
+  keyword: "FLY",
   images: [],
   savedQueries: [],
   loading: false,

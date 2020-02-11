@@ -7,7 +7,7 @@ import ErrorWindow from "./error/ErrorWindow";
 const ResultGrid = props => {
   let result = props.images.map(item => (
     <div key={item.id} className="box">
-      <a href={item.user.links.html} target="_blank">
+      <a href={item.user.links.html} target="_blank" rel="noopener noreferrer">
         <img src={item.urls.regular} alt={item.alt_description} />
       </a>
       <p>Photographer: {item.user.name}</p>

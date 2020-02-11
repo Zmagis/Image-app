@@ -9,7 +9,11 @@ const App = () => {
     <div className="App">
       <h1>
         Photos by{" "}
-        <a href="https://unsplash.com/" target="_blank">
+        <a
+          href="https://unsplash.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Unsplash
         </a>
       </h1>

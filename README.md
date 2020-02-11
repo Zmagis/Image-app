@@ -22,8 +22,6 @@ To get your API_KEY create free developer account on [unsplash.com](https://unsp
 
 ## Getting started
 
-### Install all the npm packages.
-
 Go into the project folder and type the following command to install all npm packages:
 
 `npm install`
