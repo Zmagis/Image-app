@@ -15,8 +15,11 @@ In this application user can search images by entered keyword. Keywords can be s
 
 Refer to [https://nodejs.org/en/](https://nodejs.org/en/) to install
 
-Install create-react-app
-Install create-react-app npm package globally. This will help to easily run the project and also build the source files easily. Use the following command to install create-react-app
+#### API_KEY
+
+To get your API_KEY create free developer account on [unsplash.com](https://unsplash.com/developers)
+
+## Getting started
 
 Install all the npm packages. Go into the project folder and type the following command to install all npm packages
 
@@ -26,4 +29,4 @@ In order to run the application Type the following command
 
 ### `npm start`
 
-The Application Runs on localhost:3000
+The Application runs on localhost:3000
