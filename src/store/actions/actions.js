@@ -2,7 +2,7 @@ import * as actionTypes from "./actionTypes";
 import axios from "axios";
 
 export const setKeyword = keyword => {
-  return { type: actionTypes.SET_KEYWORD, keyword };
+  return { type: actionTypes.SET_KEYWORD, keyword: keyword };
 };
 
 export const fetchImagesStart = () => {
