@@ -1,12 +1,15 @@
-## Image App
+# Image App
 
-A simple image front-end application using unsplash.com API. User can search images by entered keywords. Keywords can be saved so that when pressed that query is repeated again and user gets pictures by saved query.
+A simple image front-end application using [unsplash.com](https://unsplash.com/developers) API.This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Additional dependencies were installed:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Additional dependencies:
+`redux react-redux redux-thunk axios masonry-layout enzyme enzyme-adapter-react-16`
 
-### `redux react-redux redux-thunk axios masonry-layout`
+## Functionality
 
-### Prerequisites
+In this application user can search images by entered keyword. Keywords can be saved so that when pressed that query is repeated again and user gets pictures by saved query.
+
+## Prerequisites
 
 #### Install Node JS
 
