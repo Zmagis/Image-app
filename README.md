@@ -1,4 +1,4 @@
-## App https://www.markdownguide.org/cheat-sheet/
+## Image App
 
 A simple image front-end application using unsplash.com API. User can search images by entered keywords. Keywords can be saved so that when pressed that query is repeated again and user gets pictures by saved query.
 
