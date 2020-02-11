@@ -1,4 +1,4 @@
-##Image App https://www.markdownguide.org/cheat-sheet/
+## App https://www.markdownguide.org/cheat-sheet/
 
 A simple image front-end application using unsplash.com API. User can search images by entered keywords. Keywords can be saved so that when pressed that query is repeated again and user gets pictures by saved query.
 
@@ -6,9 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### `redux react-redux redux-thunk axios masonry-layout`
 
-###Prerequisites
+### Prerequisites
 
-####Install Node JS
+#### Install Node JS
+
 Refer to [https://nodejs.org/en/](https://nodejs.org/en/) to install
 
 Install create-react-app
